@@ -17,10 +17,12 @@ With npm, developers can easily install, update, and manage third-party packages
       .then(res =>res.json())//returns promise 
       .then(data => console.log(data))//final data
     } ```
-#### async await
+
+ #### Using async await
+``` async await
   async function getData(){
       const res = await fetch("https://fakerapi.it/api/v1/{resource}")
       const data = res.json();
       console.log(data)
-    }
+    }```
     
