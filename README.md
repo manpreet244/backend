@@ -12,11 +12,11 @@ npm stands for Node Package Manager, and it is a package manager for the JavaScr
 With npm, developers can easily install, update, and manage third-party packages that are necessary for their projects. npm also allows developers to publish their own packages for others to use.
 ### Asynchronous js
 #### Promises
-function getData(){
+``` function getData(){
       fetch("https://fakerapi.it/api/v1/persons")//returns promise
       .then(res =>res.json())//returns promise 
       .then(data => console.log(data))//final data
-    }
+    } ```
 #### async await
   async function getData(){
       const res = await fetch("https://fakerapi.it/api/v1/{resource}")
