@@ -10,3 +10,17 @@ Node se chalaya hua code js ka server bna skta h , pr js khud se nhi ye kr skta
 ## NPM 
 npm stands for Node Package Manager, and it is a package manager for the JavaScript programming language. It is used to manage packages and dependencies in Node.js projects.
 With npm, developers can easily install, update, and manage third-party packages that are necessary for their projects. npm also allows developers to publish their own packages for others to use.
+### Asynchronous js
+#### Promises
+function getData(){
+      fetch("https://fakerapi.it/api/v1/persons")//returns promise
+      .then(res =>res.json())//returns promise 
+      .then(data => console.log(data))//final data
+    }
+#### async await
+  async function getData(){
+      const res = await fetch("https://fakerapi.it/api/v1/{resource}")
+      const data = res.json();
+      console.log(data)
+    }
+    
